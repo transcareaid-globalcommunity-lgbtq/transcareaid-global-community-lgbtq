@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply - TransCare Aid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="mobile-header">
+      <h1>Apply for Surgery Aid</h1>
+    </header>
+
+    <section class="section">
+      <form class="form" action="https://formsubmit.co/mrreaveskeanu.org@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="number" name="age" placeholder="Age" required />
+        <input type="text" name="location" placeholder="Your City / Country" required />
+        <input type="text" name="pronouns" placeholder="Pronouns (e.g. she/her)" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="referrer" placeholder="How did you hear about us?" />
+
+        <select name="surgery" required>
+          <option value="">Surgery Type</option>
+          <option>Top Surgery</option>
+          <option>Bottom Surgery</option>
+          <option>Facial Feminization Surgery</option>
+          <option>Other</option>
+        </select>
+
+        <textarea name="story" placeholder="Tell us your story..." rows="5" required></textarea>
+
+        <input type="hidden" name="_subject" value="New TransCare Application">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_next" value="https://thankyou.page.link/thankyou">
+
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </section>
+
+    <nav class="bottom-nav">
+      <a href="index.html">Home</a>
+      <a href="apply.html" class="active">Apply</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</body>
+</html>

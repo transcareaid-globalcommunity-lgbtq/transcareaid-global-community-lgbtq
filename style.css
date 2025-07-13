@@ -1,0 +1,158 @@
+:root {
+  --blue: #5bcefa;
+  --pink: #f5a9b8;
+  --white: #ffffff;
+  --gray: #444;
+  --lilac: #ead8f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--white);
+  color: var(--gray);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 60px; /* Reserve space for bottom nav */
+}
+
+.mobile-header {
+  background: linear-gradient(90deg, var(--blue), var(--pink));
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.section {
+  padding: 1.5rem 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--pink);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  margin-top: 1rem;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e68fa4;
+}
+
+.form {
+  background: var(--lilac);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.card {
+  background: var(--lilac);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.sponsors h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--pink);
+}
+
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.sponsor-card {
+  background: var(--lilac);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+}
+
+.bottom-nav a.active {
+  background-color: var(--pink);
+  color: white;
+}
